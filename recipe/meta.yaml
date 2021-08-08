@@ -1,5 +1,5 @@
 {% set name = "types-waitress" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-waitress-{{ version }}.tar.gz
-  sha256: ef19cfaf80e4a330dd3c552847ad7525ad6ea51707c11b2c5fa9594e9b31880e
+  sha256: 4e17677b643f0f18a05cefb20722d48ea3ca1a0ce39731827c38c5c7c11c248c
 
 build:
   number: 0
