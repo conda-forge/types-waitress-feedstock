@@ -1,15 +1,15 @@
-{% set version = "3.0.1.20241117" %}
+{% set version = "3.0.1.20250801" %}
 
 package:
   name: types-waitress
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/t/types-waitress/types-waitress-{{ version }}.tar.gz
-  sha256: 1df08f8de36cc30ddade179e1cb28c59776e89a1a2874893b59fe2ea00a823a0
+  url: https://pypi.org/packages/source/t/types-waitress/types_waitress-{{ version }}.tar.gz
+  sha256: f919fda09e44798771d8ac54bb8573c165f1a1bc1aa9bfbf4296603db59455be
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
