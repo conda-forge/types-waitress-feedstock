@@ -1,4 +1,4 @@
-{% set version = "3.0.1.20250801" %}
+{% set version = "3.0.1.20260316" %}
 
 package:
   name: types-waitress
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-waitress/types_waitress-{{ version }}.tar.gz
-  sha256: f919fda09e44798771d8ac54bb8573c165f1a1bc1aa9bfbf4296603db59455be
+  sha256: 2f8feb8d21e926da88923573f11d696e611f2087f2a8c62237ab53c34d20a351
 
 build:
   number: 0
