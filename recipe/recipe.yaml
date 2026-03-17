@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: 3.0.1.20260316
+
+package:
+  name: types-waitress
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/t/types-waitress/types_waitress-${{ version }}.tar.gz
+  sha256: 2f8feb8d21e926da88923573f11d696e611f2087f2a8c62237ab53c34d20a351
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - package_contents:
+      site_packages:
+        - waitress-stubs/__init__.pyi
+  - requirements:
+      run:
+        - mypy
+        - pip
+        - python ${{ python_min }}.*
+        - waitress
+    script:
+      - pip check
+      - mypy -p waitress
+
+about:
+  summary: Typing stubs for waitress
+  license: Apache-2.0 AND MIT
+  license_file: LICENSE
+  homepage: https://pypi.org/project/types-waitress
+  repository: https://github.com/python/typeshed/tree/main/stubs/waitress
+
+extra:
+  recipe-maintainers:
+    - fhoehle
+    - conda-forge/mypy
