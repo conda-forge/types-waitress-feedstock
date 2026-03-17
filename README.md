@@ -3,11 +3,13 @@ About types-waitress-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/types-waitress-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/python/typeshed
+Home: https://pypi.org/project/types-waitress
 
 Package license: Apache-2.0 AND MIT
 
 Summary: Typing stubs for waitress
+
+Development: https://github.com/python/typeshed/tree/main/stubs/waitress
 
 Current build status
 ====================
