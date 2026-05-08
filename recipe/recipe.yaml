@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.0.1.20260408"
+  version: "3.0.1.20260508"
 
 package:
   name: types-waitress
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-waitress/types_waitress-${{ version }}.tar.gz
-  sha256: 8e89086f02594e5973efdc880b1e08c5c816dcdbc7adf145cf3cb62dd1a4d131
+  sha256: 3f9389096f1504a459064fbb02be53ad4326200a78dedae532967d3c13eb8d89
 
 build:
   number: 0
